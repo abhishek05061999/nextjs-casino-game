@@ -16,7 +16,7 @@ const useGameSearch = (query: string, category: string, vendor: string) => {
     
     // Preparing query parameters for the API request
     const params: any = {
-      limit: 50,
+      limit: 25,
       offset: reset ? 0 : offset,
     };
 
