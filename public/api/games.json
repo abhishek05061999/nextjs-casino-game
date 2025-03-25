@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "Baccarat Lobby",
+      "category": "BACCARAT",
+      "vendor": "PragmaticPlay",
+      "imageUrl": "/images/baccarat.png"
+    },
+    {
+      "id": 2,
+      "name": "Blackjack Lobby",
+      "category": "BLACKJACK",
+      "vendor": "PragmaticPlay",
+      "imageUrl": "/images/blackjack.png"
+    }
+  ]
+  

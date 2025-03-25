@@ -1,0 +1,117 @@
+// src/styles/globals.scss
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+/*.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+*/
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+// Responsive Game Grid
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.game-card {
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+// Game Image - Responsive
+.game-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    height: 120px;
+  }
+
+  @media (max-width: 480px) {
+    height: 100px;
+  }
+}
+
+.game-info {
+  margin-top: 10px;
+}
+
+
+
+
+.card-container {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.card-provider {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.card-content {
+  padding: 16px;
+  text-align: center;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+}
+
+
