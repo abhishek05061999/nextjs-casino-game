@@ -16,7 +16,7 @@ const useGameSearch = (query: string, category: string, vendor: string) => {
     
     // Preparing query parameters for the API request
     const params: any = {
-      limit: 20,
+      limit: 50,
       offset: reset ? 0 : offset,
     };
 
@@ -27,7 +27,7 @@ const useGameSearch = (query: string, category: string, vendor: string) => {
 
     try {
       // Fetching game data from the API using the prepared params
-      
+
       const newGames = await fetchGames(params);
       setGames(reset ? newGames : [...games, ...newGames]);
       setOffset(reset ? 20 : offset + 20);

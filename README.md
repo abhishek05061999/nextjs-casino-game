@@ -1,3 +1,58 @@
+PROJECT STRUCTURE:
+
+├── public
+│   
+├── src
+│   ├── components
+│   │   ├── GameCard.tsx            // Game card component
+│   │   ├── GameGrid.tsx            // Game grid to display list of games
+│   │   └── SearchFilter.tsx        // Search and filter component
+│   ├── hooks
+│   │   └── useGameSearch.ts        // Custom hook to manage search and filters
+│   ├── pages
+│   │   ├── _app.tsx                // Global app wrapper with providers
+│   │   ├── _document.tsx           // Custom document for SSR optimizations
+│   │   └── index.tsx               // Home page with game grid and search
+│   ├── services
+│   │   └── api.ts                  // API service to fetch games
+│   ├── store
+│   │   └── gameStore.ts            // Zustand store to manage game state
+│   ├── styles
+│   │   ├── GameCard.module.scss     // GameCard styles
+│   │   ├── GameGrid.module.scss     // GameGrid styles
+│   │   ├── Index.module.scss        // Styles for Home page
+│   │   ├── SearchFilter.module.scss // SearchFilter styles
+│   │   └── globals.scss             // Global styles
+│   ├── types
+│   │   └── game.ts                  // Game interface
+│   └── utils
+│       └── debounce.ts             // Debounce utility
+├── .env.local                       // API URL configuration
+├── next.config.js                   // Next.js configuration
+├── tsconfig.json                    // TypeScript configuration
+├── package.json                     // Project dependencies
+└── README.md                        // Project documentation
+      
+      FEATURES:
+      Filter games by category and vendor.
+      Supports categories like VIDEOSLOTS, BLACKJACK, BACCARAT, and LIVEDEALER.
+      Automatically loads more games as the user scrolls down.
+      Fully responsive design with adaptive layouts for desktop, tablet, and mobile.
+      Manages game state and search filters with Zustand for better performance.
+      Fetch games dynamically from the Jackpot API.
+      Gracefully handles API errors and displays a loading indicator.
+
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
@@ -38,3 +93,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
